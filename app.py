@@ -92,7 +92,7 @@ preprocessor = ColumnTransformer([
 
 @st.cache_resource
 def load_models():
-    inc_model  = joblib.load("xgb_pipeline_default_thr.pkl")
+    inc_model  = joblib.load("xgb_pipeline.pkl")
     time_model = joblib.load("xgbreg_pipeline.pkl")
     return inc_model, time_model
 
